@@ -136,10 +136,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = "user.CustomUser"
 
-CORS_ALLOW_ALL_ORIGINS = [
-    "http://www.wetrainsmart.co.in",
-    "http://wetrainsmart.co.in",
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
