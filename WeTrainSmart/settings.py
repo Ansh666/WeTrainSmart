@@ -26,7 +26,8 @@ SECRET_KEY = 'nk+t3xw!hnljqh1xsvdys8*70ge!hfg0f(juzq7qn3e!x2u)oe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["www.admin.wetrainsmart.co.in","admin.wetrainsmart.co.in"]
+
 
 
 # Application definition
@@ -130,13 +131,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 AUTH_USER_MODEL = "user.CustomUser"
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "http://www.wetrainsmart.co.in",
+    "http://wetrainsmart.co.in",
+]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
