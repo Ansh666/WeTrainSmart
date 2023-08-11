@@ -26,7 +26,7 @@ SECRET_KEY = 'nk+t3xw!hnljqh1xsvdys8*70ge!hfg0f(juzq7qn3e!x2u)oe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','62.72.5.21']
+ALLOWED_HOSTS = ["api.wetrainsmart.co.in","www.wpi.wetrainsmart.co.in"]
 
 
 
