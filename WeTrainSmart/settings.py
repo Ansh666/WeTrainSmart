@@ -141,11 +141,6 @@ AUTH_USER_MODEL = "user.CustomUser"
 CORS_ALLOWED_ORIGINS = [
     "http://www.wetrainsmart.co.in",
     "http://wetrainsmart.co.in",
-    "http://api.wetrainsmart.co.in/api/product/",
-    "http://api.wetrainsmart.co.in/api/user/",
-    "http://api.wetrainsmart.co.in/admin",
-    "http://api.wetrainsmart.co.in/api/order/",
-    "http://api.wetrainsmart.co.in/api/payment/",
 ]
 
 
