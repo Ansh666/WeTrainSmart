@@ -145,7 +145,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://www.wetrainsmart.co.in",
     "http://wetrainsmart.co.in",
 ]
-
+SECURE_CROSS_ORIGIN_OPENER_POLICY = same-origin
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
