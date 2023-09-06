@@ -150,6 +150,7 @@ CORS_ALLOWED_ORIGINS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 COOP_POLICY = "same-origin 'self' https://wetrainsmart.co.in"
+SECURE_SSL_REDIRECT = True
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
