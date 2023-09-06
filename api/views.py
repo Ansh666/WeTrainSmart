@@ -1,4 +1,4 @@
-from django.https import JsonResponse
+from django.http import JsonResponse
 
 # Create your views here.
 def home(request):
