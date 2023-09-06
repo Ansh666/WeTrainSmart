@@ -27,7 +27,8 @@ SECRET_KEY = 'nk+t3xw!hnljqh1xsvdys8*70ge!hfg0f(juzq7qn3e!x2u)oe'
 DEBUG = False 
 
 ALLOWED_HOSTS = ["api.wetrainsmart.co.in" , 
-"www.api.wetrainsmart.co.in",]
+"www.api.wetrainsmart.co.in",
+]
 
 
 
@@ -142,12 +143,13 @@ AUTH_USER_MODEL = "user.CustomUser"
 CORS_ALLOWED_ORIGINS = [
     "https://www.wetrainsmart.co.in",
     "https://wetrainsmart.co.in",
+    
 ]
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 COOP_POLICY = "same-origin 'self' https://wetrainsmart.co.in"
-
+SECURE_SSL_REDIRECT = True
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
