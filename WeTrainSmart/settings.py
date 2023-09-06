@@ -27,9 +27,7 @@ SECRET_KEY = 'nk+t3xw!hnljqh1xsvdys8*70ge!hfg0f(juzq7qn3e!x2u)oe'
 DEBUG = False 
 
 ALLOWED_HOSTS = ["api.wetrainsmart.co.in" , 
-"www.wpi.wetrainsmart.co.in",
-"api.wetrainsmart.co.in/api/user",
-"api.wetrainsmart.co.in/api/product"]
+"www.api.wetrainsmart.co.in",]
 
 
 
@@ -144,7 +142,6 @@ AUTH_USER_MODEL = "user.CustomUser"
 CORS_ALLOWED_ORIGINS = [
     "https://www.wetrainsmart.co.in",
     "https://wetrainsmart.co.in",
-    "https://api.wetrainsmart.co.in"
 ]
 
 
