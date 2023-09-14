@@ -3,12 +3,12 @@
 # Create your views here.
 from rest_framework import viewsets
 
-from .serializer import CategorySerializer
-from .models import Category
+from .serializer import OfferSerializer
+from .models import Offer
 
 
 # Create your views here.
 
-class CategoryViewSet(viewsets.ModelViewSet):
-    queryset = Category.objects.all().order_by('name')
-    serializer_class = CategorySerializer
+class OfferViewSet(viewsets.ModelViewSet):
+    queryset = Offer.objects.all().order_by('name')
+    serializer_class = OfferSerializer

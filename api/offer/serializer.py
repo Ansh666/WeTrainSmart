@@ -1,9 +1,9 @@
 from rest_framework import serializers
 
-from .models import Category
+from .models import Offer
 
 
-class CategorySerializer(serializers.HyperlinkedModelSerializer):
+class OfferSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Category
-        fields = ('name', 'description')
+        model = Offer
+        fields = ('name', 'description' , 'image')
