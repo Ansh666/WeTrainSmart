@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["api.wetrainsmart.co.in" , 
 "www.api.wetrainsmart.co.in",
+"127.0.0.1:8000",
 
 
 ]
@@ -43,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Pillow',
+    'PIL',
     'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
