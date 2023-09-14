@@ -24,10 +24,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'nk+t3xw!hnljqh1xsvdys8*70ge!hfg0f(juzq7qn3e!x2u)oe'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False 
+DEBUG = True
 
 ALLOWED_HOSTS = ["api.wetrainsmart.co.in" , 
 "www.api.wetrainsmart.co.in",
+
+
 ]
 
 
@@ -50,6 +52,7 @@ INSTALLED_APPS = [
     'api.user',
     'api.order',
     'api.payment',
+    'api.offer',
 ]
 
 MIDDLEWARE = [
@@ -143,7 +146,7 @@ AUTH_USER_MODEL = "user.CustomUser"
 CORS_ALLOWED_ORIGINS = [
     "https://www.wetrainsmart.co.in",
     "https://wetrainsmart.co.in",
-    
+  
 ]
 
 

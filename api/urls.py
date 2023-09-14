@@ -10,5 +10,6 @@ urlpatterns = [
     path('user/', include('api.user.urls')),
     path('order/', include('api.order.urls')),
     path('payment/', include('api.payment.urls')),
+    path('offer/', include('api.offer.urls')),
     path('api-token-auth/', views.obtain_auth_token, name='api_token_auth'),
 ]
