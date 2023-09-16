@@ -1,6 +1,6 @@
 from django.db import models
 from api.category.models import Category
-
+from PIL import Image
 
 class Product(models.Model):
     name = models.CharField(max_length=50)
