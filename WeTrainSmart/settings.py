@@ -28,8 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["api.wetrainsmart.co.in" , 
 "www.api.wetrainsmart.co.in",
-"127.0.0.1:8000",
-"127.0.0.1:3000",
+
 
 ]
 
@@ -143,7 +142,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 AUTH_USER_MODEL = "user.CustomUser"
-
+CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     "https://www.wetrainsmart.co.in",
     "https://wetrainsmart.co.in",
