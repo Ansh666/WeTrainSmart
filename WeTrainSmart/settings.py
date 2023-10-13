@@ -28,8 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["api.wetrainsmart.co.in" , 
 "www.api.wetrainsmart.co.in",
-
-
+"www.wetrainsmart.co.in",
+"wetrainsmart.co.in"
 ]
 
 
