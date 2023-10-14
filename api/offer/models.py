@@ -10,7 +10,6 @@ from PIL import Image
 class Offer(models.Model):
     name = models.CharField(max_length=50)
     description = models.CharField(max_length=250)
-    description = models.CharField(max_length=550)
     image = models.ImageField(upload_to='images/offer', blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
