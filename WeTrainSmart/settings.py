@@ -26,9 +26,10 @@ SECRET_KEY = 'nk+t3xw!hnljqh1xsvdys8*70ge!hfg0f(juzq7qn3e!x2u)oe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["api.wetrainsmart.co.in" , 
-"www.api.wetrainsmart.co.in",
-]
+ALLOWED_HOSTS = ["*"]
+#     "api.wetrainsmart.co.in" , 
+# "www.api.wetrainsmart.co.in",
+# ]
 
 
 
@@ -141,18 +142,19 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = "user.CustomUser"
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWED_ORIGINS = [
-    "https://www.wetrainsmart.co.in",
-    "https://wetrainsmart.co.in",
+# # CORS_ALLOWED_ORIGINS =  
+# # [
+# #     "https://www.wetrainsmart.co.in",
+# #     "https://wetrainsmart.co.in",
   
-]
+# ]
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
-COOP_POLICY = "same-origin 'self' https://wetrainsmart.co.in"
-SECURE_SSL_REDIRECT = True
-CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True
+# COOP_POLICY = "same-origin 'self' https://wetrainsmart.co.in"
+# SECURE_SSL_REDIRECT = True
+# CSRF_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
