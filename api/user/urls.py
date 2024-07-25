@@ -8,6 +8,7 @@ router.register(r'', views.UserViewSet)
 
 urlpatterns = [
     path('login/', views.signin, name='signin'),
+    path('trainer_login/', views.trainer_signin, name='trainer_signin' ),
     path('logout/<int:id>/', views.signout, name='signout'),
     path('', include(router.urls))
 ]

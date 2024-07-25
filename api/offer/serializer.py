@@ -6,4 +6,4 @@ from .models import Offer
 class OfferSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Offer
-        fields = ('name', 'description' , 'image')
+        fields = ('name', 'description' , 'image' )
